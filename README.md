@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚙️ Mavenix
+# Mavenix 
 
 ### Self-Hosted Agentic AI for Operations & Workflow Automation
 
