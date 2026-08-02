@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img src="./assets/mavenix.png" alt="Mavenix Logo" width="140">
+  <img src="assets/Mavenix.png" alt="Mavenix Logo" width="140">
 </p>
 
 # Mavenix
