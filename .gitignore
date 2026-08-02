@@ -1,0 +1,48 @@
+# === Sensitive Data (NEVER COMMIT) ===
+.env
+.env.*
+!.env.example
+*.env
+
+# OpenClaw config/state directory (contains tokens, credentials, memory data)
+.openclaw/
+config.json
+config.json.bak*
+*secrets*
+*token*
+!SOUL.md
+!BOOTSTRAP.md
+
+# === Agent Data Directories ===
+data/
+workspace/
+sessions/
+memories/
+lancedb/
+*.db
+*.sqlite
+*.sqlite3
+
+# === Docker ===
+*.log
+
+# === Node.js ===
+node_modules/
+npm-debug.log*
+.npm/
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Editor ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Backup files ===
+*.bak
+*.backup
+*.old

@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  mavenix:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mavenix
+    container_name: mavenix
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "18789:18789"
+    volumes:
+      - ./data:/home/node/.openclaw
+      # Optional: mount a skills folder (read-only, kept off C:\ / system drive)
+      # macOS/Linux: - /path/to/mavenix-skills:/opt/access/skills:ro
+      # Windows:     - E:\Mavenix-skills:/opt/access/skills:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:18789/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
