@@ -1,6 +1,10 @@
 <div align="center">
 
-# Mavenix 
+<p align="center">
+  <img src="./assets/mavenix.png" alt="Mavenix Logo" width="140">
+</p>
+
+# Mavenix
 
 ### Self-Hosted Agentic AI for Operations & Workflow Automation
 
