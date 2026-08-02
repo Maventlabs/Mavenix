@@ -87,23 +87,48 @@ npx skills add browserbase/skills/browser
 npx skills list
 ```
 
-### Recommended Starter Skills (10–15)
+### Starter Skills (10–15)
 
 A reasonable starting set for an operations-focused agent:
 
 ```bash
-npx skills add vercel-labs/skills/frontend-design
+# Frontend & Browser Automation
+npx skills add vercel-labs/agent-skills/frontend-design
 npx skills add browserbase/skills/browser
+
+# Document Processing (Anthropic Skills)
 npx skills add anthropics/skills/pdf
 npx skills add anthropics/skills/docx
 npx skills add anthropics/skills/xlsx
 npx skills add anthropics/skills/pptx
+
+# Engineering Practices
 npx skills add anthropics/skills/systematic-debugging
 npx skills add anthropics/skills/test-driven-development
+
+# Analytics & Workflow
 npx skills add community/skills/seo-audit
 npx skills add community/skills/web-scraping
 npx skills add community/skills/data-analysis
 npx skills add community/skills/github-pr-workflow
+```
+
+### Recommended Skills (Personal Choice)
+```bash
+
+# Execute Batch Install
+npx skills add garrytan/gstack --full-depth && \
+npx skills add addyosmani/agent-skills && \
+npx skills add mattpocock/skills && \
+npx skills add supabase/agent-skills && \
+npx skills add microsoft/playwright-cli && \
+npx skills add tailwindlabs/agent-skills && \
+npx skills add docker/agent-skills && \
+npx skills add cloudflare/agent-skills && \
+npx skills add community/skills/fastapi && \
+npx skills add langchain-ai/agent-skills && \
+npx skills add Leonxlnx/taste-skill
+
 ```
 
 > ⚠️ Verify exact package names on [skills.sh](https://skills.sh) before installing — the registry is community-maintained and names/availability change. Search first with `npx skills find` rather than assuming a name exists.
